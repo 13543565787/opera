@@ -1,0 +1,344 @@
+
+
+/* 页头设计 */
+header{
+    width: 100%;
+    background-color: #111;
+    border-bottom: #fafafa 2px solid;
+}
+.header_container{
+    height: 55px;
+    width: 90vw;
+    margin: auto;
+    max-width: 1280px;
+    min-width: 980px;
+}
+.header_container ul.menu_list{
+    margin-left: 30px;
+    height: 100%;
+    width: 600px;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* list-style-type: none; */
+}
+.header_container ul.menu_list li{
+    height: 100%;
+}
+.header_container ul.menu_list li a{
+    display: block;
+    height: 100%;
+    line-height: 55px;
+    margin-right: 5vw;    
+    font-size: 16px;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.header_container .side_bar{
+    float: right;
+    margin-right: 8vw;
+    width: 100px;
+    height: 100%;
+}
+.header_container .side_bar .language{
+    width: 100%;
+    height: 48%;
+    display: block;
+    font-size: 14px;
+    color: #fafafa;
+    text-decoration: underline;
+    text-align: center;
+}
+.header_container .side_bar .icons_list{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+
+}
+.header_container .side_bar .icons_list li img{
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+/* 主体内容设计TODO: */
+.main{
+    width: 100%;
+    background-color: #000;
+}
+/* 视频区域 */
+.main .video_container{
+    width: 100%;
+    border-bottom: 3px solid #fafafa;
+}
+.main .video_container .video_pic{
+    float: left;
+    width: 65%;
+    height: 100%;
+    background:url(../assets/one.jpg) no-repeat center center/cover ;
+}
+.main .video_container .video_desc{
+    width: 35%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.main .video_container .video_desc .title{
+    display: block;
+    width: 30rem;
+    height: 14rem;
+    margin-left: 15px;
+    margin-top: calc( 50% - 7rem );
+}
+.main .video_container .video_desc .tit{
+    font-size: 7rem;
+    letter-spacing: 2rem;
+    color: #fafafa;
+}
+.main .video_container .video_desc .tit2{
+    margin-left: 6vw;
+}
+.main .video_container .video_desc a{
+    position: absolute;
+    right: 2vw;
+    bottom: 2vw;
+}
+.main .video_container .video_desc a img{
+    width: 6rem;
+    height: 6rem;
+}
+/* 描述框 */
+.main .desription{
+    width: 100%;
+    min-width: 980px;
+    height: 6rem;
+    text-align: center;
+    background-color: #fafafa;
+}
+.main .desription h3{
+    color: #111;
+    line-height: 6rem;
+}
+
+/* 详情样式 */
+.main .detail_container{
+    width: 100%;
+    height: 800px;
+    background-color: #111;
+    border-bottom: 1px solid #fafafa;
+}
+.main .detail_container .link{
+    text-align: right;
+}
+.main .detail_container .link a{
+    display: inline-block;
+    color: #007ef9;
+    height: 6rem;
+    line-height: 6rem;
+    padding-right: 30px;
+    font-size: 2.4rem;
+}
+/* 三列布局 */
+.main .detail_container .detail_list{
+    width: 100%;
+    height: calc( 100% - 6.5rem);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.main .detail_container .detail_list .detail_item{
+    width: 32%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+}
+/* 图片 */
+.main .detail_container .detail_list .detail_item .pic1{
+    background: url(../assets/two.jpeg) no-repeat center center/cover;
+}
+.main .detail_container .detail_list .detail_item .pic2{
+    background: url(../assets/three.jpg) no-repeat center center/cover;
+}
+.main .detail_container .detail_list .detail_item .pic3{
+    background: url(../assets/four.jpg) no-repeat center center/cover;
+}
+.main .detail_container .detail_list .detail_item .pic{
+    width: 100%;
+    height: 32rem;
+    border: 1px solid #fafafa;
+    box-sizing: border-box;
+}
+/* 文字-title */
+.main .detail_container .detail_list .detail_item .title{
+    height: 6rem;
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0px 4rem;
+}
+.main .detail_container .detail_list .detail_item .desc{
+    display: inline-block;
+    width: 85%;
+    height: 15rem;
+    margin: 3rem auto;
+    font-size: 2.6rem;
+    line-height: 4rem;
+}
+
+/* 页脚设计 */
+/* 通用样式 */
+.footer_layout{
+    float: left;
+    margin: 0px 3vw;
+    width: 11rem;
+    height: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+.footer_layout li{
+    padding: 2px 0;
+}
+/* 整体样式 */
+footer{
+    width: 100%;
+    background-color: #111;
+}
+.footer_container{
+    width: 90vw;
+    max-width: 1280px;
+    min-width: 980px;
+    margin: auto;
+    height: 6rem;
+    color: #fafafa;
+    font-size: 1.2rem;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
+}
+/* 标题 */
+.footer_container .title{
+    float: left;
+    width: 10rem;
+    height: 100%;
+    margin: 0px 3vw;
+}
+.footer_container .title .tit{
+    height: 50%;
+    letter-spacing: 3px;
+    font-size: 1.8rem;
+    line-height: 32px;
+}
+.footer_container .title .tit2{
+    display: block;
+    margin-left: 3vw;
+}
+/* 联系 */
+.footer_container .contact li{
+    position: relative;
+}
+.footer_container .contact li img{
+    position: absolute;
+    left: -18px;
+    width: 14px;
+    height: 14px;
+}
+/* 搜索 */
+.footer_container .search{
+    height: 100%;
+    width: 15rem;
+    float: left;
+}
+.footer_container .search .search_title{
+    padding: 12px 0 6px;
+    text-align: left;
+}
+.footer_container .search input{
+    width: 70%;
+    height: 20px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+    text-indent: 4px;
+    color: #fafafa;
+}
+.footer_container .search button{
+    width: 20%;
+    height: 23px;
+    background-color: #fafafa;
+    color: #111;
+    border-radius: 4px;
+}
+/* 详情 */
+.footer_container .detail{
+    margin: 0px;
+    margin-right: 2vw;
+    float: right;
+    width: 18rem;
+}
+
+
+/* 响应式布局 */
+@media only screen and (min-width: 1440px){
+    /* 整个视频区域高度 */
+    .main .video_container{
+        height: 700px;
+    }
+    .main .desription{
+        height: 8rem;
+    }
+    
+    .main .desription h3{
+        line-height: 8rem; 
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1440px){
+    .main .video_container{
+        height: 600px;
+    }
+    .main .desription h3{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .main .video_container{
+        height: 550px;
+    }
+    /* 视屏区域的文字 */
+    .main .video_container .video_desc .tit{
+        font-size: 5rem ;
+        letter-spacing: 1vw;
+    }
+    .main .desription h3{
+        font-size: 3.5rem;
+    }
+    /* 三列布局中的描述文字 */
+    .main .detail_container .detail_list .detail_item .desc{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 980px){
+    .main .video_container{
+        height: 500px;
+    }
+    /* 视屏区域的文字 */
+    .main .video_container .video_desc .tit{
+        font-size: 5rem ;
+        letter-spacing: 1vw;
+    }
+    .main .desription{
+        text-align: left;
+    }
+    .main .desription h3{
+        font-size: 3rem;
+    }
+    /* 三列布局中的描述文字 */
+    .main .detail_container .detail_list .detail_item .desc{
+        font-size: 2rem;
+    }
+}
+
