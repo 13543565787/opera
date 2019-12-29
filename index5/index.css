@@ -65,6 +65,148 @@ header{
 }
 
 /* 主体内容设计 */
+.main{
+    width: 100%;
+    min-width: 980px;
+    background-color: #fff;
+}
+/* 第一部分内容 */
+.main .part1{
+    width: 100%;
+    height: 500px;
+}
+.main .part1 ul.pic_list{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.main .part1 ul.pic_list li.pic_item{
+    width: 30%;
+    height: 100%;
+}
+.main .part1 ul.pic_list li.pic_item .pic{
+    background: no-repeat center center/cover;
+    width: 29vw;
+    height: 29vw;
+    margin: auto;
+    max-width: 34rem;
+    max-height: 34rem;
+    border-radius: 50%;
+}
+.main .part1 ul.pic_list li.pic_item h4{
+    color: #111;
+    font-size: 2.7rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+/* 第二部分内容 */
+.main .part2{
+    width: 90%;
+    height: 780px;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+.main .part2 .part_left{
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.main .part2 .part_left img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 3rem;
+}
+.main .part2 .part_left .desc{
+    width: 90%;
+    margin: auto;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 3rem;
+    line-height: 5rem;
+    color: #111;
+}
+.main .part2 .part_right{
+    width: 70%;
+    height: 100%;
+    float: right;
+    color: #111;
+}
+.main .part2 .part_right .input{
+    width: 90%;
+    height: 24%;
+    margin: auto;
+    padding-top: 3rem;
+}
+.main .part2 .part_right .input p.left{
+    float: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.main .part2 .part_right .input p.right{
+    float: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.main .part2 .part_right .input textarea{
+    width: 100%;
+    height: 14rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.main .part2 .part_right ul.comment_list{
+    width: 90%;
+    height: 70%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main .part2 .part_right ul.comment_list li.comment_item{
+    width: 50%;
+    height: 14rem;
+}
+.main .part2 .part_right ul.comment_list li.comment_item img{
+    width: 3.4rem;
+    height: 3.4rem;
+    float: left;
+}
+.main .part2 .part_right ul.comment_list li.comment_item .comment{
+    width: calc(100% - 4rem);
+    float: right;
+}
+.main .part2 .part_right ul.comment_list li.comment_item .comment .name{
+    font-size: 1.4rem;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1rem 0;
+    /* float: left; */
+}
+.main .part2 .part_right ul.comment_list li.comment_item .comment .name p.time{
+    /* float: left; */
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 1rem;
+    /* overflow: hidden; */
+}
+.main .part2 .part_right ul.comment_list li.comment_item .comment p.detail{
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+/* 第三部分内容 */
+.main .part3{
+
+}
 
 
 
