@@ -2,7 +2,7 @@
  * @Author: hjz
  * @Date: 2019-12-27 09:20:23
  * @LastEditors  : hjz
- * @LastEditTime : 2019-12-28 10:08:44
+ * @LastEditTime : 2019-12-29 12:06:10
  * @Description: 
  -->
 <!DOCTYPE html>
@@ -58,10 +58,73 @@
         </div>
     </header>
     <div class="main">
-        <div class="video_container">
-            <div class="video_pic"></div>
-            <div class="video_desc"></div>
+        <div class="slide1_container">
+            <h3 class="title">
+                FAMOUS ARTISTS
+                <p>Mei Lanfang, one of the most famous Dan performers of all time, was also one of the greatest
+                    popularizers of Peking opera abroad.</p>
+            </h3>
+            <ul class="silde_list">
+                <li class="silde_item">
+                    <a href="#">
+                        <div class="pic" style="background-image: url(../assets/eight.jpeg);"></div>
+                        <p class="name">XINPEI TAN</p>
+                        <p class="age">1847-1917</p>
+                    </a>
+                </li>
+                <li class="silde_item">
+                    <a href="#">
+                        <div class="pic" style="background-image: url(../assets/nine.jpeg);"></div>
+                        <p class="name">YANQIU CHEN</p>
+                        <p class="age">1904-1958</p>
+                    </a>
+                </li>
+                <li class="silde_item">
+                    <a href="#">
+                        <div class="pic" style="background-image: url(../assets/ten.jpeg);"></div>
+                        <p class="name">LANFANG MEI</p>
+                        <p class="age">1894-1961</p>
+                    </a>
+                </li>
+                <li class="silde_item">
+                    <a href="#">
+                        <div class="pic" style="background-image: url(../assets/eleven.jpeg);"></div>
+                        <p class="name">PEIYU WANG</p>
+                        <p class="age">1978</p>
+                    </a>
+                </li>
+                <li class="silde_item">
+                    <a href="#">
+                        <div class="pic" style="background-image: url(../assets/twelve.png);"></div>
+                        <p class="name">LANLAN CHU</p>
+                        <p class="age">1983</p>
+                    </a>
+                </li>
+            </ul>
         </div>
+        <div class="slide2_container">
+            <h3 class="title">CLASSIC PLAYS</h3>
+            <p>VELILLUM DOLORE</p>
+            <ul class="silde_list">
+                <li class="silde_item">
+                    <video src="../assets/monkey.mp4" controls="controls"></video>
+                    <a>MONKEY KING</a>
+                </li>
+                <li class="silde_item">
+                    <video src="../assets/farewell.mp4" controls="controls"></video>
+                    <a>FAREWELL TO MY CONCUBING</a>
+                </li>
+                <li class="silde_item">
+                    <video src="../assets/lady.mp4" controls="controls"></video>
+                    <a>LADY GENERAL MU TAKES COMMAND</a>
+                </li>
+                <li class="silde_item">
+                    <video src="../assets/dingjunshan.mp4" controls="controls"></video>
+                    <a>DINGJUN HILL</a>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <footer>
         <div class="footer_container">
@@ -103,5 +166,13 @@
         </div>
     </footer>
 </body>
+<script>
+    // let silde1_list = document.querySelectorAll('.slide1_container .silde_list');
+    // let silde1_items = document.querySelectorAll('.slide1_container .silde_list .silde_item');
+    // // console.log(silde1_list);
+    // silde1_list[0].addEventListener('click', (e) => {
+    //     silde1_items.forEach()
+    // })
+</script>
 
 </html>

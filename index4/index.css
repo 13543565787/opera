@@ -65,8 +65,208 @@ header{
 }
 
 /* 主体内容设计 */
+.main{
+    width: 100%;
+    min-width: 980px;
+    height: auto;
+    background-color: #111;
+}
+/* 第一部分内容 */
+.main .part1{
+    width: 100%;
+    height: 680px;
+    border-bottom: 2px solid #fafafa;
+}
+.main .part1 ul.pic_list{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main .part1 .pic_list p.desc{
+    width: 14rem;
+    height: 70%;
+    font-size: 2.7rem;
+    color: #fafafa;
+    line-height: 6rem;
+}
+.main .part1 .pic_list li.pic_item {
+    width: 34%;
+    height: 100%;
+}
+.main .part1 .pic_list li.pic_item .pic {
+    background: no-repeat center top/cover;
+    width: 84%;
+    margin: 3rem auto;
+    height: 74%;
+    /* border-radius: 34%; */
+    border-radius: 10em/50em;
+}
+.main .part1 .pic_list li.pic_item:last-child .pic {
+    background: no-repeat right top/cover;
+}
+.main .part1 .pic_list li.pic_item p {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fafafd;
+    padding-top: 2.4rem;
+}
+
+/* 第二部分内容 */
+.main .part2{
+    width: 100%;
+    height: 780px;
+    border-bottom: 2px solid #fafafa;
+    position: relative;
+}
+.main .part2 .pic_left{
+    background: no-repeat center center /cover;
+    width: 50%;
+    height: 40rem;
+    position: absolute;
+    left: 4vw;
+    top: 4vw;
+    border: 2px solid #444;
+    border-radius: 5rem;
+}
+.main .part2 .pic_right{
+    background: no-repeat center center /cover;
+    width: 50%;
+    height: 40rem;
+    position: absolute;
+    left: 34vw;
+    top: 40%;
+    border: 1px solid #444;
+    border-radius: 5rem;
+}
+.main .part2 .desc{
+    width: 13rem;
+    height: 30rem;
+    font-size: 2.7rem;
+    color: #fafafa;
+    line-height: 5rem;
+    position: absolute;
+    right: 3vw;
+    bottom: 4vw;
+}
+
+/* 第三部分内容 */
+.main .part3{
+    width: 100%;
+    height: 780px;
+    border-bottom: 2px solid #fafafa;
+}
+.main .part3 .left_part{
+    width: 50%;
+    float: left;
+    height: 100%;
+    border-right: 2px solid #fafafa;
+    box-sizing: border-box;
+}
+.main .part3 .left_part h3{
+    font-size: 3rem;
+    color: #fafafa;
+    padding: 3rem 0;
+    text-align: center;
+}
+.main .part3 .left_part .music_play{
+    width: 80%;
+    margin: auto;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+.main .part3 .left_part .music_play .music_pic{
+    width: 26rem;
+    height: 26rem;
+    background: no-repeat center center/cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    flex-grow:0;
+    position: relative;
+}
+.main .part3 .left_part .music_play .music_pic ul.link{
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: -3.8rem;
+    left: calc(50% - 5rem);
+}
+.main .part3 .left_part .music_play .music_pic ul.link li img{
+    width: 2rem;
+    height: 2rem;
+    padding: 0 3px;
+}
 
 
+.main .part3 .left_part .music_play p.music_name{
+    font-size: 2.4rem;
+    color: #fafafa;
+    padding-left: 3rem;
+}
+.main .part3 .left_part ul.music_list{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main .part3 .left_part ul.music_list li.music_item{
+    width: 100%;
+    height: 3rem;
+    margin-top: 3rem;
+}
+.main .part3 .left_part ul.music_list li.music_item img{
+    height: 3rem;
+    width: 3rem;
+    float: left;
+}
+.main .part3 .left_part ul.music_list li.music_item p.music_name{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fafafa;
+    padding-left: 4rem;
+}
+
+.main .part3 .right_part{
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.main .part3 .right_part h3{
+    height: 4rem;
+    padding: 3rem 0;
+    text-align: center;
+    color: #fafafa;
+    font-size: 3rem;
+}
+.main .part3 .right_part .detail{
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    color: #fafafa;
+    text-align: center;
+}
+.main .part3 .right_part .detail p.title{
+    font-size: 2.4rem;
+    padding: 3rem;
+}
+.main .part3 .right_part .detail p.desc{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.main .part3 .right_part .pic{
+    width: 80%;
+    height: 40%;
+    margin: 4rem auto 3rem;
+    background: no-repeat center center/cover;
+}
 
 /* 页脚设计 */
 /* 通用样式 */
